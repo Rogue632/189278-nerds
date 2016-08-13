@@ -70,6 +70,7 @@
                             <input type="radio" name="web" value="rezina"> Резиновая
                           </label>
                         </li>
+                      </ul>
                     </div>
                     <div class="filter-features">
                       <ul>
@@ -113,7 +114,7 @@
           </ul>
         </div>
         <div class="sort">                  <!-- Сортировка магазина -->
-          <p>СОРТИРОВАТЬ:</p>
+          <span>СОРТИРОВАТЬ:</span>
           <ul>
             <li>
               <a class="sort-by-price" href="#">ПО ЦЕНЕ</a>
@@ -126,30 +127,25 @@
             </li>
           </ul>
         </div>
-          <div class="shop">                      <!-- Блок с магазином -->
-          <div id="shop-page-one" class="shop-item-content">    <!-- Блок первой страницы -->
+        <div class="shop"> <!-- Блок с магазином -->
+          <div class="shop-item-content">
             <div class="shop-item-top">               <!-- Хедер с кнопками -->
-            </div>
-            <div class="shop-item-body">              <!-- Блок с фоном -->
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
+              </div>
+              <div class="shop-item-body">              <!-- Блок с фоном -->
+                <div class="shop-item-des">
                   <p><b>AVIATOR</b></p>
                   <p>Одностраничный макет с авторским дизайном</p>
                   <a class="shop-item-price" href="#">8000 Р.</a> 
                 </div>
               </div>
-            </div>
-          </div>
           <div class="shop-item-content">
             <div class="shop-item-top">
             </div>
             <div class="shop-item-body">
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
-                  <p><b>Sunset</b></p>
-                  <p>Интернет-магазин с личным кабинетом</p>
-                  <a class="shop-item-price" href="#">10000 Р.</a>
-                </div>
+              <div class="shop-item-descr">
+                <p><b>Sunset</b></p>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a class="shop-item-price" href="#">10000 Р.</a>
               </div>
             </div>
           </div>
@@ -157,12 +153,10 @@
             <div class="shop-item-top">
             </div>
             <div class="shop-item-body">
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
-                  <p><b>FORTE</b></p>
-                  <p>Отличный макет для личного блога</p>
-                  <a class="shop-item-price" href="#">5000 Р.</a>
-                </div>
+              <div class="shop-item-descr">
+                <p><b>FORTE</b></p>
+                <p>Отличный макет для личного блога</p>
+                <a class="shop-item-price" href="#">5000 Р.</a>
               </div>
             </div>
           </div>
@@ -170,12 +164,10 @@
             <div class="shop-item-top">
             </div>
             <div class="shop-item-body">
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
-                  <p><b>Modern Organic THAI</b></p>
-                  <p>Сайт для ресторана быстрого питания</p>
-                  <a class="shop-item-price" href="#">12000 Р.</a>
-                </div>
+              <div class="shop-item-descr">
+                <p><b>Modern Organic THAI</b></p>
+                <p>Сайт для ресторана быстрого питания</p>
+                <a class="shop-item-price" href="#">12000 Р.</a>
               </div>
             </div>
           </div>
@@ -183,12 +175,10 @@
             <div class="shop-item-top">
             </div>
             <div class="shop-item-body">
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
-                  <p><b>AVENUE</b></p>
-                  <p>Макет для блога о путешествиях</p>
-                  <a class="shop-item-price" href="#">8000 Р.</a>
-                </div>
+              <div class="shop-item-descr">
+                <p><b>AVENUE</b></p>
+                <p>Макет для блога о путешествиях</p>
+                <a class="shop-item-price" href="#">8000 Р.</a>
               </div>
             </div>
           </div>
@@ -196,30 +186,28 @@
             <div class="shop-item-top">
             </div>
             <div class="shop-item-body">
-              <div class="shop-item-content">
-                <div class="shop-item-descr">
-                  <p><b>DOVETAIL</b></p>
-                  <p>Интернет-магазин с галереей товаров</p>
-                  <a class="shop-item-price" href="#">14000 Р.</a>
-                </div>
+              <div class="shop-item-descr">
+                <p><b>DOVETAIL</b></p>
+                <p>Интернет-магазин с галереей товаров</p>
+                <a class="shop-item-price" href="#">14000 Р.</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="shop-control">
-          <div class="shop-control-first">
-            <a class="shop-control-first-link" href="#shop-page-one">1</a>  <!-- Ссылка на айди страницы,что бы переключаться без ссылки -->
-          </div>
-          <div class="shop-control-second">
-            <a class="shop-control-second-link" href="#shop-page-two">2</a>       <!-- Здесь ссылка на id, которого ещё нет в коде! -->
-          </div>
-          <div class="shop-control-third">
-            <a class="shop-control-third-link" href="#shop-page-three">3</a>        <!-- Здесь ссылка на id, которого ещё нет в коде! -->
-          </div>
-          <div class="shop-control-next">
-            <a class="shop-control-next-link" href="#">СЛЕДУЮЩАЯ</a><!-- Узнать, как сделать переключение на след. страницу,со стр.2 и далее. -->
-          </div>
+      <div class="pagination">
+        <div class="pagination-first">
+          <a class="pagination-first-link" href="#">1</a>
         </div>
+        <div class="pagination-second">
+          <a class="pagination-second-link" href="#">2</a>
+        </div>
+        <div class="pagination-third">
+          <a class="pagination-third-link" href="#">3</a>
+        </div>
+        <div class="pagination-next">
+          <a class="pagination-next-link" href="#">СЛЕДУЮЩАЯ</a>
+        </div>
+      </div>
       </div>
     </main>
     <footer class="main-footer">
