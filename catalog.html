@@ -39,23 +39,23 @@
     </header>
     <main class="content">
       <div class="container">
-        <div class="filter">
+        <div class="catalog-filter">
           <ul>
             <li>
-              <div class="filter-slider">
+              <div class="catalog-filter-slider">
                 <div>
                 <!-- Будет вебинар -->
                 </div>
               </div>
             </li>
             <li>
-              <div class="filter-options">
+              <div class="catalog-filter-options">
                 <form action="#" method="post">
                   <div class="container-filter-options">
-                    <div class="filter-layout">
+                    <div class="catalog-filter-layout">
                       <ul>
-                        <h3>СЕТКА</h3>
                         <li>
+                          <h3>СЕТКА</h3>
                           <label>
                             <input type="radio" name="web" value="adapt" checked> Адаптивная
                           </label>
@@ -72,10 +72,10 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="filter-features">
+                    <div class="catalog-filter-features">
                       <ul>
-                        <h3>Особенности</h3>
                         <li>
+                          <h3>Особенности</h3>
                           <label>
                             <input type="checkbox" name="slider" checked> Слайдер
                           </label>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="filter-btn">
                       <label>
-                        <input class="submit" type="submit" value="ПОКАЗАТЬ">
+                        <input type="submit" value="ПОКАЗАТЬ">
                       </label>
                     </div>
                   </div>
@@ -113,101 +113,101 @@
             </li>
           </ul>
         </div>
-        <div class="sort">                  <!-- Сортировка магазина -->
-          <span>СОРТИРОВАТЬ:</span>
-          <ul>
-            <li>
-              <a class="sort-by-price" href="#">ПО ЦЕНЕ</a>
-            </li>
-            <li>
-              <a class="sort-by-type" href="#">ПО ТИПУ</a>
-            </li>
-            <li>
-              <a class="sort-by-funct" href="#">ПО ФУНКЦИОНАЛУ</a>
-            </li>
-          </ul>
-        </div>
-        <div class="shop"> <!-- Блок с магазином -->
-          <div class="shop-item-content">
-            <div class="shop-item-top">               <!-- Хедер с кнопками -->
+        <div class="catalog"> <!-- Блок с магазином -->
+          <div class="catalog-sorter">                  <!-- Сортировка магазина -->
+            <span>СОРТИРОВАТЬ:</span>
+            <ul>
+              <li>
+                <a class="catalog-sorter-link" href="#">ПО ЦЕНЕ</a>
+              </li>
+              <li>
+                <a class="catalog-sorter-link" href="#">ПО ТИПУ</a>
+              </li>
+              <li>
+                <a class="catalog-sorter-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+              </li>
+            </ul>
+            <!-- Здесь место для стрелочек-треугольников -->
+            <div></div>
+            <div></div>
+          </div>
+          <div class="catalog-items">
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>AVIATOR</b></h4>
+                <p>Одностраничный макет с авторским дизайном</p>
+                <a class="catalog-item-price-link" href="#">8000 Р.</a>
               </div>
-              <div class="shop-item-body">              <!-- Блок с фоном -->
-                <div class="shop-item-des">
-                  <p><b>AVIATOR</b></p>
-                  <p>Одностраничный макет с авторским дизайном</p>
-                  <a class="shop-item-price" href="#">8000 Р.</a> 
-                </div>
-              </div>
-          <div class="shop-item-content">
-            <div class="shop-item-top">
             </div>
-            <div class="shop-item-body">
-              <div class="shop-item-descr">
-                <p><b>Sunset</b></p>
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>Sunset</b></h4>
                 <p>Интернет-магазин с личным кабинетом</p>
-                <a class="shop-item-price" href="#">10000 Р.</a>
+                <a class="catalog-price-link" href="#">10000 Р.</a>
               </div>
             </div>
-          </div>
-          <div class="shop-item-content">
-            <div class="shop-item-top">
-            </div>
-            <div class="shop-item-body">
-              <div class="shop-item-descr">
-                <p><b>FORTE</b></p>
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>FORTE</b></h4>
                 <p>Отличный макет для личного блога</p>
-                <a class="shop-item-price" href="#">5000 Р.</a>
+                <a class="catalog-price-link" href="#">5000 Р.</a>
               </div>
             </div>
-          </div>
-          <div class="shop-item-content">
-            <div class="shop-item-top">
-            </div>
-            <div class="shop-item-body">
-              <div class="shop-item-descr">
-                <p><b>Modern Organic THAI</b></p>
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>Modern Organic THAI</b></h4>
                 <p>Сайт для ресторана быстрого питания</p>
-                <a class="shop-item-price" href="#">12000 Р.</a>
+                <a class="catalog-price-link" href="#">12000 Р.</a>
               </div>
             </div>
-          </div>
-          <div class="shop-item-content">
-            <div class="shop-item-top">
-            </div>
-            <div class="shop-item-body">
-              <div class="shop-item-descr">
-                <p><b>AVENUE</b></p>
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>AVENUE</b></h4>
                 <p>Макет для блога о путешествиях</p>
-                <a class="shop-item-price" href="#">8000 Р.</a>
+                <a class="catalog-price-link" href="#">8000 Р.</a>
               </div>
             </div>
-          </div>
-          <div class="shop-item-content">
-            <div class="shop-item-top">
-            </div>
-            <div class="shop-item-body">
-              <div class="shop-item-descr">
-                <p><b>DOVETAIL</b></p>
+            <div class="catalog-item">
+              <a class="catalog-item-link">
+                <img src="img/#" height="240" width="240">
+              </a>
+              <div class="item-popup">
+                <h4><b>DOVETAIL</b></h4>
                 <p>Интернет-магазин с галереей товаров</p>
-                <a class="shop-item-price" href="#">14000 Р.</a>
+                <a class="catalog-price-link" href="#">14000 Р.</a>
               </div>
             </div>
           </div>
-        </div>
-      <div class="pagination">
-        <div class="pagination-first">
-          <a class="pagination-first-link" href="#">1</a>
-        </div>
-        <div class="pagination-second">
-          <a class="pagination-second-link" href="#">2</a>
-        </div>
-        <div class="pagination-third">
-          <a class="pagination-third-link" href="#">3</a>
-        </div>
-        <div class="pagination-next">
-          <a class="pagination-next-link" href="#">СЛЕДУЮЩАЯ</a>
-        </div>
-      </div>
+          <div class="catalog-pagination">
+            <div class="catalog-pagination-first">
+              <a class="btn-grey btn-page-first">1</a>
+            </div>
+            <div class="catalog-pagination-second">
+              <a class="btn-grey btn-page" href="#">2</a>
+            </div>
+            <div class="catalog-pagination-third">
+              <a class="btn-grey btn-page" href="#">3</a>
+            </div>
+            <div class="catalog-pagination-next">
+              <a class="btn-grey btn-next" href="#">СЛЕДУЮЩАЯ</a>
+            </div>
+          </div>
+        </div>        
       </div>
     </main>
     <footer class="main-footer">
@@ -227,17 +227,27 @@
       </div>
       <div class="container">
         <div class="social">
-          <div class="social-btn-wrap">
-            <a class="social-btn btn-vk" href="#"></a>
-            <a class="social-btn btn-fb" href="#"></a>
-            <a class="social-btn btn-in" href="#"></a>
-          </div>
-          <div class="promo-text">
-            <p><b>Давайте дружить, это выгодно!</b></p>
-            <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+          <a class="social-btn social-btn-vk" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-in" href="#"></a>
+        </div>
+        <div class="promo-text">
+          <p><b>Давайте дружить, это выгодно!</b></p>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <form action="#" method="post">
+        <label for="popup-user-name">Ваше имя:</label>
+        <input id="popup-user-name" type="text" name="user-name" value="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
+        <label for="popup-user-mail">Ваш e-mail:</label>
+        <input id="popup-user-mail" type="text" name="user-mail" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        <label for="popup-letter">Текст письма:</label>
+        <textarea id="popup-letter" cols="50">В СВОБОДНОЙ ФОРМЕ</textarea>
+        <label for="popup-submit"></label>
+        <input id="popup-submit" type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </div>
   </body>
 </html>

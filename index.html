@@ -60,12 +60,13 @@
         <div class="features">
           <div class="features-item websites">
             <a class="websites-link" href="#">
-              <img src="img/#.png" height="124" width="240" alt=""></a>
+              <img src="img/#.png" height="124" width="240" alt="">
+            </a>
             <h2>
               <a class="websites-link" href="">Веб-сайты</a>
             </h2>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="features-btn" href="#">ЗАКАЗАТЬ</a>
+            <a class="features-btn btn-red" href="#">ЗАКАЗАТЬ</a>
           </div>
           <div class="features-item apps">
             <a class="apps-link" href="#">
@@ -74,7 +75,7 @@
               <a class="apps-link" href="#"> Приложения</a>
             </h2>
             <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
-            <a class="features-btn" href="#">ЗАКАЗАТЬ</a>
+            <a class="features-btn btn-green" href="#">ЗАКАЗАТЬ</a>
           </div>
           <div class="features-item presentations">
             <a class="presentations-link" href="#">
@@ -83,14 +84,12 @@
               <a class="presentations-link" href="#">Презентации</a>
             </h2>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="features-btn" href="#">ЗАКАЗАТЬ</a>
+            <a class="features-btn btn-yellow" href="#">ЗАКАЗАТЬ</a>
           </div>
         </div>
-        <div class="main">
-          <div class="main-inner">
+        <div class="seo-block">
+          <div class="wrap-seo-block">
             <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-          </div>
-          <div class="main-inner">
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.</p>
             <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
             <ul>
@@ -99,11 +98,9 @@
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-          <div class="main-inner">
-            <img src="img/#.png" width="139" height="56" alt="">
-          </div>
-          <div class="main-inner">Since 2004</div>
-          <div class="main-inner">
+          <div class="wrap-seo-block">
+            <img class="" src="img/#.png" width="139" height="56" alt="">
+            <span>Since 2004</span>
             <h4>КАК МЫ РАБОТАЕМ:</h4>
             <ul>
               <li>С самоотдачей 146%</li>
@@ -113,9 +110,17 @@
           </div>
         </div>
         <div class="partners">
-          <img class="partners-item" src="img/#.png" height="37" width="198" alt="">
-          <img class="partners-item" src="img/#.png" height="68" width="199" alt="">
-          <img class="partners-item" src="img/#.png" height="86" width="209" alt="">
+          <div class="partners-items">
+            <a href="#">
+              <img class="partners-logo" src="img/#.png" height="37" width="198" alt="">
+            </a>
+            <a href="#">
+              <img class="partners-logo" src="img/#.png" height="68" width="199" alt="">
+            </a>
+            <a href="#">
+              <img class="partners-logo" src="img/#.png" height="86" width="209" alt="">
+            </a>
+          </div>
         </div>
       </div>
     </main>
@@ -146,5 +151,17 @@
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <form action="#" method="post">
+        <label for="popup-user-name">Ваше имя:</label>
+        <input id="popup-user-name" type="text" name="user-name" value="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
+        <label for="popup-user-mail">Ваш e-mail:</label>
+        <input id="popup-user-mail" type="text" name="user-mail" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        <label for="popup-letter">Текст письма:</label>
+        <textarea id="popup-letter" cols="50">В СВОБОДНОЙ ФОРМЕ</textarea>
+        <label for="popup-submit"></label>
+        <input id="popup-submit" type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </div>
   </body>
 </html>
