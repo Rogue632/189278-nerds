@@ -40,78 +40,46 @@
     <main class="content">
       <div class="container">
         <div class="catalog-filter">
-          <ul>
-            <li>
               <div class="catalog-filter-slider">
                 <div>
                 <!-- Будет вебинар -->
                 </div>
               </div>
-            </li>
-            <li>
               <div class="catalog-filter-options">
                 <form action="#" method="post">
-                  <div class="container-filter-options">
-                    <div class="catalog-filter-layout">
-                      <ul>
-                        <li>
-                          <h3>СЕТКА</h3>
-                          <label>
-                            <input type="radio" name="web" value="adapt" checked> Адаптивная
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="radio" name="web" value="fix"> Фиксированная
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="radio" name="web" value="rezina"> Резиновая
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="catalog-filter-features">
-                      <ul>
-                        <li>
-                          <h3>Особенности</h3>
-                          <label>
-                            <input type="checkbox" name="slider" checked> Слайдер
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="checkbox" name="features"> Блок преимуществ
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="checkbox" name="news" checked> Новости
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="checkbox" name="gallery"> Галерея
-                          </label>
-                        </li>
-                        <li>
-                          <label>
-                            <input type="checkbox" name="cart"> Корзина
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="filter-btn">
-                      <label>
-                        <input type="submit" value="ПОКАЗАТЬ">
-                      </label>
-                    </div>
+                  <div class="catalog-filter-layout">
+                    <h3>СЕТКА</h3>
+                    <label>
+                      <input type="radio" name="web" value="adapt" checked> Адаптивная
+                    </label>
+                    <label>
+                      <input type="radio" name="web" value="fix"> Фиксированная
+                    </label>
+                    <label>
+                      <input type="radio" name="web" value="rubber"> Резиновая
+                    </label>
                   </div>
+                  <div class="catalog-filter-features">
+                    <h3>Особенности</h3>
+                    <label>
+                      <input type="checkbox" name="slider" checked> Слайдер
+                    </label>
+                    <label>
+                      <input type="checkbox" name="features"> Блок преимуществ
+                    </label>
+                    <label>
+                      <input type="checkbox" name="news" checked> Новости
+                    </label>
+                    <label>
+                      <input type="checkbox" name="gallery"> Галерея
+                    </label>
+                    <label>
+                      <input type="checkbox" name="cart"> Корзина
+                    </label>
+                  </div>
+                  <input type="submit" value="ПОКАЗАТЬ">
                 </form>
               </div>
-            </li>
-          </ul>
         </div>
         <div class="catalog"> <!-- Блок с магазином -->
           <div class="catalog-sorter">                  <!-- Сортировка магазина -->
@@ -126,10 +94,14 @@
               <li>
                 <a class="catalog-sorter-link" href="#">ПО ФУНКЦИОНАЛУ</a>
               </li>
-            </ul>
             <!-- Здесь место для стрелочек-треугольников -->
-            <div></div>
-            <div></div>
+              <li>
+                <div class=""></div>
+              </li>
+              <li>
+                <div class=""></div>
+              </li>
+            </ul>
           </div>
           <div class="catalog-items">
             <div class="catalog-item">
@@ -194,20 +166,30 @@
             </div>
           </div>
           <div class="catalog-pagination">
-            <div class="catalog-pagination-first">
-              <a class="btn-grey btn-page-first">1</a>
-            </div>
-            <div class="catalog-pagination-second">
-              <a class="btn-grey btn-page" href="#">2</a>
-            </div>
-            <div class="catalog-pagination-third">
-              <a class="btn-grey btn-page" href="#">3</a>
-            </div>
-            <div class="catalog-pagination-next">
-              <a class="btn-grey btn-next" href="#">СЛЕДУЮЩАЯ</a>
-            </div>
+            <ul>
+              <li>
+                <div class="catalog-pagination-first">
+                  <a class="btn-grey btn-page-first">1</a>
+                </div>
+              </li>
+              <li>
+                <div class="catalog-pagination-second">
+                  <a class="btn-grey btn-page" href="#">2</a>
+                </div>
+              </li>
+              <li>
+                <div class="catalog-pagination-third">
+                  <a class="btn-grey btn-page" href="#">3</a>
+                </div>
+              </li>
+              <li>
+                <div class="catalog-pagination-next">
+                  <a class="btn-grey btn-next" href="#">СЛЕДУЮЩАЯ</a>
+                </div>
+              </li>
+            </ul>
           </div>
-        </div>        
+        </div>
       </div>
     </main>
     <footer class="main-footer">
@@ -239,14 +221,21 @@
     </footer>
     <div class="popup">
       <form action="#" method="post">
-        <label for="popup-user-name">Ваше имя:</label>
-        <input id="popup-user-name" type="text" name="user-name" value="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
-        <label for="popup-user-mail">Ваш e-mail:</label>
-        <input id="popup-user-mail" type="text" name="user-mail" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
-        <label for="popup-letter">Текст письма:</label>
-        <textarea id="popup-letter" cols="50">В СВОБОДНОЙ ФОРМЕ</textarea>
-        <label for="popup-submit"></label>
-        <input id="popup-submit" type="submit" value="ОТПРАВИТЬ">
+        <div class="popup-item">
+          <label for="popup-user-name">Ваше имя:</label>
+          <input id="popup-user-name" type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
+        </div>
+        <div class="popup-item">
+          <label for="popup-user-mail">Ваш e-mail:</label>
+          <input id="popup-user-mail" type="email" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </div>
+        <div class="popup-item">
+          <label for="popup-letter">Текст письма:</label>
+          <textarea id="popup-letter" name="user-letter">В СВОБОДНОЙ ФОРМЕ</textarea>
+        </div>
+        <div class="popup-item">
+          <input type="submit" value="ОТПРАВИТЬ">
+        </div>
       </form>
     </div>
   </body>
