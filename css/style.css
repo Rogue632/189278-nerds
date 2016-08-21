@@ -1,4 +1,4 @@
-                      /*  FONTS  */
+                      /*  fonts  */
 
 body {
   font-size: 16px;
@@ -122,3 +122,50 @@ span {
   float: right;
   width: 570px;
 }
+
+.popup {
+  width: 250px;
+}
+
+                          /*  catalog  */
+
+.catalog-filter {
+  float: left;
+  width: 240px;
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+}
+
+.catalog-sorter {
+  margin-bottom: 20px;
+}
+
+.catalog-items {
+  margin-bottom: 80px;
+}
+
+.catalog-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-pagination {
+  width: 285px;
+}
+
+
+
+
+
+
+
+
+
