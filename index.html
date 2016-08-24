@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия:"Нёрдс"</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" >
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -11,9 +11,9 @@
     <header class="main-header">
       <div class="container">
         <div class="header-top clearfix">
-          <div class="logo">
+          <div class="main-logo">
             <a class="logo-link">
-              <img src="img/logo-index-header.png" width="140" height="56" alt="Нёрдс">
+              <img src="img/logo-index-header.png" width="139" height="56" alt="Нёрдс">
             </a>
           </div>
           <nav class="main-navigator">
@@ -41,17 +41,17 @@
         <div class="header-slider">
           <h2>Долго, дорого,скрупулезно.</h2>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="header-slider-btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="header-slider">
           <h2>Любите ли вы математику,как любим ее мы?</h2>
           <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать</p>
-          <a class="header-slider-btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="header-slider">
           <h2>Только наркотики,только хардкор!</h2>
           <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-          <a class="header-slider-btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+          <a class="btn btn-red" href="#">УЗНАТЬ БОЛЬШЕ</a>
         </div>
         <div class="header-slider-indicator"></div>
         <div class="header-slider-indicator"></div>
@@ -62,31 +62,31 @@
       <div class="container">
         <div class="features clearfix">
           <div class="features-item websites">
-            <a class="websites-link" href="#">
-              <img src="img/index-features-webs.jpg" height="124" width="240" alt="Веб-сайты">
+            <a href="#">
+              <img src="img/index-features-webs.jpg" width="240" height="124"  alt="Веб-сайты">
             </a>
             <h3>
-              <a class="features-link websites" href="">ВЕБ-САЙТЫ</a>
+              <a href="">ВЕБ-САЙТЫ</a>
             </h3>
-            <span>Мир никогда не будет прежним после того как увидит ваш сайт!</span>
+            <p class="features-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="btn btn-red" href="#">ЗАКАЗАТЬ</a>
           </div>
           <div class="features-item apps">
-            <a class="apps-link" href="#">
-            <img src="img/index-features-apps.jpg" height="124" width="240" alt="Приложения"></a>
+            <a href="#">
+            <img src="img/index-features-apps.jpg" width="240" height="124" alt="Приложения"></a>
             <h3>
-              <a class="apps-link" href="#"> ПРИЛОЖЕНИЯ</a>
+              <a href="#"> ПРИЛОЖЕНИЯ</a>
             </h3>
-            <span>Покорите топ-10 приложений в AppStrore и Google Play</span>
+            <p class="features-item-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
             <a class="btn btn-green" href="#">ЗАКАЗАТЬ</a>
           </div>
           <div class="features-item presentations">
-            <a class="presentations-link" href="#">
-              <img src="img/index-features-present.jpg" height="124" width="240" alt="Презентации"></a>
+            <a href="#">
+              <img src="img/index-features-present.jpg" width="240" height="124" alt="Презентации"></a>
             <h3>
-              <a class="presentations-link" href="#">ПРЕЗЕНТАЦИИ</a>
+              <a href="#">ПРЕЗЕНТАЦИИ</a>
             </h3>
-            <span>Вы даже не подозреваете, насколько вы изумительны!</span>
+            <p class="features-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="btn btn-yellow" href="#">ЗАКАЗАТЬ</a>
           </div>
         </div>
@@ -113,18 +113,16 @@
             </ul>
           </div>
         </div>
-        <div class="partners">
-          <div class="partners-items clearfix">
-            <a href="#">
-              <img class="partners-logo" src="img/glukhanko.png" width="209" height="86" alt="Glukhanko">
-            </a>
-            <a href="#">
-              <img class="partners-logo" src="img/htmlacademy.png" width="209" height="86" alt="htmlacademy">
-            </a>
-            <a href="#">
-              <img class="partners-logo barbershop" src="img/barbershop.png" width="209" height="86" alt="Barbershop Borodinski">
-            </a>
-          </div>
+        <div class="partners clearfix">
+          <a href="#">
+            <img class="partners-logo" src="img/glukhanko.png" width="209" height="86" alt="Glukhanko">
+          </a>
+          <a href="#">
+            <img class="partners-logo" src="img/htmlacademy.png" width="209" height="86" alt="htmlacademy">
+          </a>
+          <a href="#">
+            <img class="partners-logo barbershop" src="img/barbershop.png" width="209" height="86" alt="Barbershop Borodinski">
+          </a>
         </div>
       </div>
     </main>
@@ -138,9 +136,6 @@
             тел. +7 (812) 275-75-75
           </p>
           <a class="btn btn-red" href="#">НАПИШИТЕ НАМ</a>
-        </div>
-        <div class="pointer-map">
-          <img src="img/pointer-map.png" height="190" width="231" alt="указатель">
         </div>
       </div>
       <div class="container clearfix">

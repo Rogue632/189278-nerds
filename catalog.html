@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог "Нёрдс"</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" >
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
@@ -11,9 +11,9 @@
     <header class="main-header">
       <div class="container">
         <div class="header-top clearfix">
-          <div class="logo">
+          <div class="main-logo">
             <a class="logo-link" href="index.html">
-              <img src="img/logo-index-header.png" width="140" height="56" alt="Нёрдс">
+              <img src="img/logo-index-header.png" width="139" height="56" alt="Нёрдс">
             </a>
           </div>
           <nav class="main-navigator">
@@ -45,47 +45,45 @@
     </header>
     <main class="content">
       <div class="container clearfix">
-        <div class="catalog-filter">
-              <div class="catalog-filter-slider">
-                <div>
-                <!-- Будет вебинар -->
-                </div>
+        <div class="catalog-filter">          
+          <form action="#" method="post">
+            <div class="catalog-filter-slider">
+              <div>
+              <!-- Будет вебинар -->
               </div>
-              <div class="catalog-filter-options">
-                <form action="#" method="post">
-                  <div class="catalog-filter-layout">
-                    <h3>СЕТКА</h3>
-                    <label>
-                      <input type="radio" name="web" value="adapt" checked> Адаптивная
-                    </label>
-                    <label>
-                      <input type="radio" name="web" value="fix"> Фиксированная
-                    </label>
-                    <label>
-                      <input type="radio" name="web" value="rubber"> Резиновая
-                    </label>
-                  </div>
-                  <div class="catalog-filter-features">
-                    <h3>Особенности</h3>
-                    <label>
-                      <input type="checkbox" name="slider" checked> Слайдер
-                    </label>
-                    <label>
-                      <input type="checkbox" name="features"> Блок преимуществ
-                    </label>
-                    <label>
-                      <input type="checkbox" name="news" checked> Новости
-                    </label>
-                    <label>
-                      <input type="checkbox" name="gallery"> Галерея
-                    </label>
-                    <label>
-                      <input type="checkbox" name="cart"> Корзина
-                    </label>
-                  </div>
-                  <input type="submit" value="ПОКАЗАТЬ">
-                </form>
-              </div>
+            </div>
+            <div class="catalog-filter-layout">
+              <h3>СЕТКА</h3>
+              <label>
+                <input type="radio" name="web" value="adapt" checked> Адаптивная
+              </label>
+              <label>
+                <input type="radio" name="web" value="fix"> Фиксированная
+              </label>
+              <label>
+                <input type="radio" name="web" value="rubber"> Резиновая
+              </label>
+            </div>
+            <div class="catalog-filter-features">
+              <h3>Особенности</h3>
+              <label>
+                <input type="checkbox" name="slider" checked> Слайдер
+              </label>
+              <label>
+                <input type="checkbox" name="features"> Блок преимуществ
+              </label>
+              <label>
+                <input type="checkbox" name="news" checked> Новости
+              </label>
+              <label>
+                <input type="checkbox" name="gallery"> Галерея
+              </label>
+              <label>
+                <input type="checkbox" name="cart"> Корзина
+              </label>
+            </div>
+            <input type="submit" value="ПОКАЗАТЬ">
+          </form>
         </div>
         <div class="catalog"> <!-- Блок с магазином -->
           <div class="catalog-sorter">                  <!-- Сортировка магазина -->
@@ -112,62 +110,62 @@
           <div class="catalog-items clearfix">
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/aviator.jpg" height="240" width="240" alt="AVIATOR">
+                <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR">
               </a>
               <div class="item-popup">
-                <h4><b>AVIATOR</b></h4>
+                <h4>AVIATOR</h4>
                 <p>Одностраничный макет с авторским дизайном</p>
-                <a class="catalog-item-price-link" href="#">8000 Р.</a>
+                <a class="btn btn-red" href="#">8000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/sunset.jpg" height="240" width="240" alt="SUNSET">
+                <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET">
               </a>
               <div class="item-popup">
-                <h4><b>Sunset</b></h4>
+                <h4>Sunset</h4>
                 <p>Интернет-магазин с личным кабинетом</p>
-                <a class="catalog-price-link" href="#">10000 Р.</a>
+                <a class="btn btn-red" href="#">10000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/forte.jpg" height="240" width="240" alt="FORTE">
+                <img src="img/forte.jpg" width="240" height="240" alt="FORTE">
               </a>
               <div class="item-popup">
-                <h4><b>FORTE</b></h4>
+                <h4>FORTE</h4>
                 <p>Отличный макет для личного блога</p>
-                <a class="catalog-price-link" href="#">5000 Р.</a>
+                <a class="btn btn-red" href="#">5000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/thai.jpg" height="240" width="240" alt="MODERN-ORGANIC-THAI">
+                <img src="img/thai.jpg" width="240" height="240" alt="MODERN-ORGANIC-THAI">
               </a>
               <div class="item-popup">
-                <h4><b>MODERN ORGANIC THAI</b></h4>
+                <h4>MODERN ORGANIC THAI</h4>
                 <p>Сайт для ресторана быстрого питания</p>
-                <a class="catalog-price-link" href="#">12000 Р.</a>
+                <a class="btn btn-red" href="#">12000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/avenue.jpg" height="240" width="240" alt="AVENUE">
+                <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE">
               </a>
               <div class="item-popup">
-                <h4><b>AVENUE</b></h4>
+                <h4>AVENUE</h4>
                 <p>Макет для блога о путешествиях</p>
-                <a class="catalog-price-link" href="#">8000 Р.</a>
+                <a class="btn btn-red" href="#">8000 Р.</a>
               </div>
             </div>
             <div class="catalog-item">
               <a class="catalog-item-link">
-                <img src="img/dovetail.jpg" height="240" width="240" alt="DOVETAIL">
+                <img src="img/dovetail.jpg" width="240" height="240" alt="DOVETAIL">
               </a>
               <div class="item-popup">
-                <h4><b>DOVETAIL</b></h4>
+                <h4>DOVETAIL</h4>
                 <p>Интернет-магазин с галереей товаров</p>
-                <a class="catalog-price-link" href="#">14000 Р.</a>
+                <a class="btn btn-red" href="#">14000 Р.</a>
               </div>
             </div>
           </div>
@@ -208,9 +206,6 @@
             тел. +7 (812) 275-75-75
           </p>
           <a class="btn btn-red" href="#">НАПИШИТЕ НАМ</a>
-        </div>
-        <div class="pointer-map">
-          <img src="img/pointer-map.png" height="190" width="231" alt="указатель">
         </div>
       </div>
       <div class="container clearfix">
