@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Дизайн-студия:"Нёрдс"</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" >
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -17,24 +17,26 @@
             </a>
           </div>
           <nav class="main-navigator">
-            <ul>
-              <li class="header-nav-studio">
-                <a>СТУДИЯ</a>
+            <ul class="main-navigator-list">
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link">СТУДИЯ</a>
               </li>
-              <li class="header-nav-clients">
-                <a href="#">КЛИЕНТЫ</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="#">КЛИЕНТЫ</a>
               </li>
-              <li class="header-nav-shop">
-                <a href="catalog.html">МАГАЗИН</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="catalog.html">МАГАЗИН</a>
               </li>
-              <li class="header-nav-contacts">
-                <a href="#">КОНТАКТЫ</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="#">КОНТАКТЫ</a>
               </li>
             </ul>
           </nav>
           <div class="user-block">
             <div class="cart">
-              <a class="cart-link" href="#">КОРЗИНА</a>
+              <a class="cart-link" href="#">
+                <span class="icon-basket"></span>КОРЗИНА
+              </a>
             </div>
           </div>
         </div>
@@ -66,7 +68,7 @@
               <img src="img/index-features-webs.jpg" width="240" height="124"  alt="Веб-сайты">
             </a>
             <h3>
-              <a href="">ВЕБ-САЙТЫ</a>
+              <a class="features-item-link" href="">ВЕБ-САЙТЫ</a>
             </h3>
             <p class="features-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="btn btn-red" href="#">ЗАКАЗАТЬ</a>
@@ -75,7 +77,7 @@
             <a href="#">
             <img src="img/index-features-apps.jpg" width="240" height="124" alt="Приложения"></a>
             <h3>
-              <a href="#"> ПРИЛОЖЕНИЯ</a>
+              <a class="features-item-link" href="#"> ПРИЛОЖЕНИЯ</a>
             </h3>
             <p class="features-item-text">Покорите топ-10 приложений в AppStrore и Google Play</p>
             <a class="btn btn-green" href="#">ЗАКАЗАТЬ</a>
@@ -84,7 +86,7 @@
             <a href="#">
               <img src="img/index-features-present.jpg" width="240" height="124" alt="Презентации"></a>
             <h3>
-              <a href="#">ПРЕЗЕНТАЦИИ</a>
+              <a class="features-item-link" href="#">ПРЕЗЕНТАЦИИ</a>
             </h3>
             <p class="features-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="btn btn-yellow" href="#">ЗАКАЗАТЬ</a>

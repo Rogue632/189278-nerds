@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Каталог "Нёрдс"</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=latin,cyrillic" >
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -17,24 +17,26 @@
             </a>
           </div>
           <nav class="main-navigator">
-            <ul>
-              <li class="header-nav-studio">
-                <a href="index.html">СТУДИЯ</a>
+            <ul class="main-navigator-list">
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="index.html">СТУДИЯ</a>
               </li>
-              <li class="header-nav-clients">
-                <a href="#">КЛИЕНТЫ</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="#">КЛИЕНТЫ</a>
               </li>
-              <li class="header-nav-shop">
-                <a>МАГАЗИН</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link">МАГАЗИН</a>
               </li>
-              <li class="header-nav-contacts">
-                <a href="#">КОНТАКТЫ</a>
+              <li class="main-nav-list-item">
+                <a class="main-nav-list-link" href="#">КОНТАКТЫ</a>
               </li>
             </ul>
           </nav>
           <div class="user-block">
             <div class="cart">
-              <a class="cart-link" href="#">КОРЗИНА</a>
+              <a class="cart-link" href="#">
+                <span class="icon-basket"></span>КОРЗИНА
+              </a>
             </div>
           </div>
         </div>
@@ -49,7 +51,7 @@
           <form action="#" method="post">
             <div class="catalog-filter-slider">
               <div>
-              <!-- Будет вебинар -->
+              <!-- slider price -->
               </div>
             </div>
             <div class="catalog-filter-layout">
@@ -85,25 +87,26 @@
             <input type="submit" value="ПОКАЗАТЬ">
           </form>
         </div>
-        <div class="catalog"> <!-- Блок с магазином -->
-          <div class="catalog-sorter">                  <!-- Сортировка магазина -->
-            <span>СОРТИРОВАТЬ:</span>
+        <div class="catalog"> 
+          <div class="catalog-sorting">
+            <span class="catalog-sorting-subtitle">СОРТИРОВАТЬ:</span>
+            <ul class="catalog-sorting-list">
+              <li class="catalog-sorting-item">
+                <a class="catalog-sorting-link" href="#">ПО ЦЕНЕ</a>
+              </li>
+              <li class="catalog-sorting-item">
+                <a class="catalog-sorting-link" href="#">ПО ТИПУ</a>
+              </li>
+              <li class="catalog-sorting-item">
+                <a class="catalog-sorting-link" href="#">ПО ФУНКЦИОНАЛУ</a>
+              </li>
+            </ul>
             <ul>
               <li>
-                <a class="catalog-sorter-link" href="#">ПО ЦЕНЕ</a>
+                <div class="icon-up-dir"></div>
               </li>
               <li>
-                <a class="catalog-sorter-link" href="#">ПО ТИПУ</a>
-              </li>
-              <li>
-                <a class="catalog-sorter-link" href="#">ПО ФУНКЦИОНАЛУ</a>
-              </li>
-            <!-- Здесь место для стрелочек-треугольников -->
-              <li>
-                <div class=""></div>
-              </li>
-              <li>
-                <div class=""></div>
+                <div class="icon-down-dir"></div>
               </li>
             </ul>
           </div>
@@ -199,6 +202,7 @@
     <footer class="main-footer">
       <div class="location">
         <div class="contacts">
+        <!-- добавить контейнер -->
           <p>
             <b>NЁRDS DESIGN STUDIO</b>
             191186, Санкт-Петербург,<br>

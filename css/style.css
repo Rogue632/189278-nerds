@@ -7,27 +7,63 @@ body {
   line-height: 22px;
 }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff") format("woff"),
+       url("../fonts/symbols-nerds.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-nerds";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+
 h1 {
   font-size: 36px;
   font-weight: 600;
   line-height: 36px;
 }
 
-h2,
+h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
 h3 {
   font-size: 18px;
   font-weight: 500;
   line-height: 30px;
 }
-
-.features-item-text {
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 500px;
-  color: #283136;
-}
-
-
 
 .clearfix::after {
   content: "";
@@ -40,211 +76,6 @@ h3 {
   width: 880px;
   padding: 0 10px;
   margin: 0 auto;
-}
-
-h3 a {
-  text-decoration: none;
-  color: #000000;
-}
-
-                          /*  header  */
-
-.main-header {
-  margin-bottom: 80px;
-  background-color: #eeeeee;
-  padding-top: 1px;  /* что бы не схлопывался маргин */
-}
-
-.header-top {
-  margin-top: 23px;
-}
-
-.main-logo {
-  float: left;
-  width: 139px;
-  margin-right: 100px;
-}
-
-.main-navigator {
-  float: left;
-  width: 480px;
-  margin-top: 27px;
-}
-
-.main-navigator a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.main-navigator a:hover {
-  color: #fa6467;
-}
-
-.main-navigator ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-  text-align: right;
-}
-
-.main-navigator li {
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 14px;
-  line-height: 30px;
-  margin-right: 45px;
-}
-
-.main-navigator li:last-child {
-margin-right: 0;
-}
-
-.user-block {
-  float: right;
-  max-width: 110px;
-  margin-top: 27px;
-}
-
-.cart-link {
-  font-size: 14px;
-  line-height: 30px;
-  color: #000000;
-  text-decoration: none;
-}
-
-.cart-link:hover {
-  color: #fa6467;
-}
-
-
-
-                          /*  main  */
-
-/*  features  */
-
-.features {
-  margin-bottom: 80px;
-}
-
-.features-item {
-  float: left;
-  width: 240px;
-  margin-right: 80px;
-}
-
-.features-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-
-
-/*  seo  */
-
-.seo-block {
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-  padding: 60px 0;
-  margin-bottom: 45px;
-}
-
-.column-left {
-  float: left;
-  width: 580px;
-}
-
-.column-right {
-  float: right;
-  width: 240px;
-}
-
-/*  partners  */
-
-.partners {
-  border-bottom: 2px solid #eeeeee;
-  padding-bottom: 35px;
-}
-
-.partners-logo {
-  float: left;
-  width: 209px;
-  margin-right: 108px;
-  opacity: 0.2;
-}
-
-/*
-.partners-logo:nth-child {
-  margin-right: 0;
-}
-
-Это правило почему-то не работает, пришлось добавить класс barbershop 3-й картинке
-*/
-
-.barbershop {
-  margin-right: 0;
-}
-
-                          /*  footer  */
-
-.main-footer {
-  margin-top: 80px;
-}
-
-.social-btn-wrap {
-  float: left;
-  width: 240px;
-}
-
-.promo-text {  
-  float: right;
-  width: 570px;
-}
-
-.location {
-  background-image: url("img/map-img.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /*  Ничего не выходит*/
-}
-
-                          /*  catalog  */
-
-.catalog-filter {
-  float: left;
-  width: 240px;
-}
-
-.catalog {
-  float: right;
-  width: 560px;
-}
-
-.catalog-sorter {
-  margin-bottom: 20px;
-}
-
-.catalog-sorter ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.catalog-items {
-  margin-bottom: 80px;
-}
-
-.catalog-item {
-  float: left;
-  width: 240px;
-  margin-right: 80px;
-}
-
-.catalog-item:nth-child(2n) {
-  margin-right: 0;
-}
-
-.catalog-pagination {
-  width: 285px;
 }
 
                           /*  buttons  */
@@ -292,6 +123,265 @@ margin-right: 0;
 .item-popup .btn-red {
   font-size: 18px;
   line-height: 8,65px;
+}
+
+                          /*  header  */
+
+.main-header {
+  margin-bottom: 80px;
+  background-color: #eeeeee;
+  padding-top: 1px;  /* что бы не схлопывался маргин */
+}
+
+.header-top {
+  margin-top: 23px;
+}
+
+.main-logo {
+  float: left;
+  width: 139px;
+  margin-right: 100px;
+}
+
+.main-navigator {
+  float: left;
+  width: 480px;
+  margin-top: 27px;
+}
+
+.main-nav-list-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav-list-link:hover {
+  color: #fa6467;
+}
+
+.main-nav-list-link:active {
+  color: #000000;
+  opacity: 0.4;
+}
+
+.main-navigator-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  text-align: right;
+}
+
+.main-nav-list-item {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: 45px;
+}
+
+.header-nav-list-item:last-child {
+margin-right: 0;
+}
+
+.user-block {
+  float: right;
+  max-width: 110px;
+  margin-top: 27px;
+}
+
+.cart-link {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.cart-link:hover {
+  color: #fa6467;
+}
+
+.cart-link:active {
+  color: #000000;
+  opacity: 0.4;
+}
+
+.icon-basket::before {
+  margin-right: 14px;
+  opacity: 0.3;
+}
+
+.icon-basket:active::before {
+  opacity: 0.15;
+}
+
+.icon-basket:hover::before {
+  opacity: 1;
+}
+
+                          /*  main  */
+
+/*  features  */
+
+.features-item-text {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500px;
+  color: #283136;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.features-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.features-item-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*  seo  */
+
+.seo-block {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding: 60px 0;
+  margin-bottom: 45px;
+}
+
+.column-left {
+  float: left;
+  width: 580px;
+}
+
+.column-right {
+  float: right;
+  width: 240px;
+}
+
+/*  partners  */
+
+.partners {
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 35px;
+}
+
+.partners-logo {
+  float: left;
+  width: 209px;
+  margin-right: 108px;
+  opacity: 0.2;
+}
+
+
+/*.partners-logo:nth-child(3n) {
+  margin-right: 0;
+}*/
+
+/* partners-logo к ссылкам*/
+.barbershop {
+  margin-right: 0;
+}
+
+/*  catalog  */
+
+.catalog-filter {
+  float: left;
+  width: 240px;
+}
+
+.catalog {
+  float: right;
+  width: 560px;
+}
+
+.catalog-sorting {
+  margin-bottom: 20px;
+
+}
+
+.catalog-sorting-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.catalog-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-sorting-subtitle,
+.catalog-sorting-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Roboto","Open Sans",sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.catalog-sorting-link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ca74;
+  opacity: 0.3;
+
+}
+
+.catalog-sorting-link:active {
+  opacity: 1;
+  border-bottom: none;
+}
+
+.catalog-sorting-link:hover {
+  opacity: 1;
+  border-bottom: 1px solid #00ca74;
+}
+
+
+
+.catalog-pagination {
+  width: 285px;
+}
+
+                          /*  footer  */
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.social-btn-wrap {
+  float: left;
+  width: 240px;
+}
+
+.promo-text {  
+  float: right;
+  width: 570px;
+}
+
+.location {
+  width: 100%;
+  height: 420px;
+  background-image: url("../img/map-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /*  Ничего не выходит*/
 }
 
 
