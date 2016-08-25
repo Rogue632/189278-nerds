@@ -74,7 +74,7 @@ h3 {
 
 .container {
   width: 880px;
-  padding: 0 10px;
+  padding: 1px 10px;
   margin: 0 auto;
 }
 
@@ -130,7 +130,6 @@ h3 {
 .main-header {
   margin-bottom: 80px;
   background-color: #eeeeee;
-  padding-top: 1px;  /* что бы не схлопывался маргин */
 }
 
 .header-top {
@@ -142,6 +141,8 @@ h3 {
   width: 139px;
   margin-right: 100px;
 }
+
+/*  navigator  */
 
 .main-navigator {
   float: left;
@@ -180,8 +181,10 @@ h3 {
 }
 
 .header-nav-list-item:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
+
+/*  user-block  */
 
 .user-block {
   float: right;
@@ -204,6 +207,8 @@ margin-right: 0;
   color: #000000;
   opacity: 0.4;
 }
+
+/*сделать before */
 
 .icon-basket::before {
   margin-right: 14px;
@@ -281,13 +286,7 @@ margin-right: 0;
   opacity: 0.2;
 }
 
-
-/*.partners-logo:nth-child(3n) {
-  margin-right: 0;
-}*/
-
-/* partners-logo к ссылкам*/
-.barbershop {
+.partners-logo:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -353,8 +352,6 @@ margin-right: 0;
   border-bottom: 1px solid #00ca74;
 }
 
-
-
 .catalog-pagination {
   width: 285px;
 }
@@ -365,33 +362,77 @@ margin-right: 0;
   margin-top: 80px;
 }
 
-.social-btn-wrap {
-  float: left;
-  width: 240px;
+.location {
+  width: 100%;
+  height: 416px;
+  background-image: url("../img/map-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-.promo-text {  
+.footer-contacts {
+  width: 230px;
+  background-color: #ffffff;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 87px;
+  vertical-align: bottom;
+}
+
+.footer-contacts-subtitle {
+  font-weight: 500;
+  line-height: 30px;
+  display: block;
+}
+
+.footer-contacts-address {
+  line-height: 20px;
+  color: #666666;
+}
+
+.contacts-btn {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.footer-social {
+  float: left;
+  width: 270px;
+  font-size: 0;
+  margin: 75px 0;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background: #e1e1e1;
+  text-decoration: none;
+  margin-right: 28px;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.social-btn:hover {
+  background-color: #fb565a;
+}
+
+.footer-promo {  
   float: right;
   width: 570px;
 }
 
-.location {
-  width: 100%;
-  height: 420px;
-  background-image: url("../img/map-img.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  /*  Ничего не выходит*/
+.footer-subtitle {
+  font-size: 36px;
+  line-height: 36px;
 }
 
 
-
-
-
-
-
-
-
+.popup {
+  display: none;
+}
 
 
 
