@@ -94,8 +94,8 @@ h3 {
   background: #fb565a;
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
   font-family: "Roboto","Open Sans",sans-serif;
+  line-height: 18px;  
   text-decoration: none;
   padding: 10px 40px;
 }
@@ -104,8 +104,8 @@ h3 {
   background: #00ca74;
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
   font-family: "Roboto","Open Sans",sans-serif;
+  line-height: 18px;
   text-decoration: none;
   padding: 10px 40px;
 }
@@ -114,8 +114,8 @@ h3 {
   background: #efc84a;
   font-size: 12px;
   font-weight: 500;
-  line-height: 18px;
   font-family: "Roboto","Open Sans",sans-serif;
+  line-height: 18px;
   text-decoration: none;
   padding: 10px 40px;
 }
@@ -134,12 +134,13 @@ h3 {
 
 .header-top {
   margin-top: 23px;
+  margin-bottom: 40px;
 }
 
 .main-logo {
   float: left;
   width: 139px;
-  margin-right: 100px;
+  margin-right: 145px;
 }
 
 /*  navigator  */
@@ -228,7 +229,11 @@ h3 {
 .header-slider {
   position: relative;
   width: 880px;
-  height: 310px;
+  min-height: 310px;
+}
+
+.header-slide-title {
+  margin-bottom: 10px;
 }
 
 .header-slider-text {
@@ -237,7 +242,15 @@ h3 {
 
 .slider-btn {
   width: 160px;
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.header-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 310px;
 }
 
 .header-slide:nth-child(1) {
@@ -260,10 +273,6 @@ h3 {
 
 .header-slide {
   display: none;
-}
-
-.header-slide:nth-child(1) {
-  display: block;
 }
 
 .header-slider-controls {
@@ -289,7 +298,29 @@ h3 {
   cursor: pointer;
 }
 
+.header-slider-toggle {
+  display: none;
+}
+
 .header-slider-controls .active {
+  background: #c1c1c1;
+}
+
+#slider-control-btn-1:checked ~ .header-slides .header-slide:nth-child(1) {
+  display: block;
+}
+
+#slider-control-btn-2:checked ~ .header-slides .header-slide:nth-child(2) {
+  display: block;
+}
+
+#slider-control-btn-3:checked ~ .header-slides .header-slide:nth-child(3) {
+  display: block;
+}
+
+#slider-control-btn-1:checked ~ .header-slider-controls label[for="slider-control-btn-1"],
+#slider-control-btn-2:checked ~ .header-slider-controls label[for="slider-control-btn-2"],
+#slider-control-btn-3:checked ~ .header-slider-controls label[for="slider-control-btn-3"] {
   background: #c1c1c1;
 }
 
