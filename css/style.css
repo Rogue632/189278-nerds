@@ -329,6 +329,13 @@ h3 {
   background: #c1c1c1;
 }
 
+.catalog-header-caption {
+  text-align: center;
+
+  padding: 30px 100px;
+  padding-bottom: ;
+}
+
                           /*  main  */
 
 /*  features  */
