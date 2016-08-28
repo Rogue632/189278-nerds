@@ -1,12 +1,5 @@
                       /*  fonts  */
 
-body {
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Roboto","Open Sans",sans-serif;
-  line-height: 22px;
-}
-
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -46,6 +39,13 @@ body {
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Roboto","Open Sans",sans-serif;
+  line-height: 22px;
+}
 
 h1 {
   font-size: 36px;
@@ -189,7 +189,7 @@ h3 {
 
 .user-block {
   float: right;
-  max-width: 110px;
+  width: 110px;
   margin-top: 27px;
 }
 
@@ -198,6 +198,7 @@ h3 {
   line-height: 30px;
   color: #000000;
   text-decoration: none;
+  padding-left: 40px;
 }
 
 .cart-link:hover {
@@ -210,7 +211,7 @@ h3 {
 }
 
 /*сделать before */
-
+/*
 .icon-basket::before {
   margin-right: 14px;
   opacity: 0.3;
@@ -223,13 +224,17 @@ h3 {
 .icon-basket:hover::before {
   opacity: 1;
 }
-
+*/
 /*  slider  */
 
 .header-slider {
   position: relative;
   width: 880px;
   min-height: 310px;
+}
+
+.header-slide-content {
+  width: 500px;
 }
 
 .header-slide-title {
@@ -331,7 +336,7 @@ h3 {
 .features-item-text {
   font-size: 15px;
   line-height: 22px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #283136;
 }
 
@@ -474,7 +479,6 @@ h3 {
 .footer-contacts {
   width: 230px;
   background-color: #ffffff;
-  text-align: left;
   padding-left: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -485,7 +489,6 @@ h3 {
 .footer-contacts-subtitle {
   font-weight: 500;
   line-height: 30px;
-  display: block;
 }
 
 .footer-contacts-address {
