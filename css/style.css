@@ -120,9 +120,35 @@ h3 {
   padding: 10px 40px;
 }
 
-.item-popup .btn-red {
-  font-size: 18px;
-  line-height: 8,65px;
+.social-btn {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  background: #e1e1e1;
+  text-decoration: none;
+  margin-right: 28px;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.social-btn:hover {
+  background-color: #fb565a;
+}
+
+.popup-btn {
+  width: 100%;
+}
+
+.popup-close {
+  width: 43px;
+  height: 43px;
+  display: block;
+  margin-left: auto;
+  background: #fb565a url("../img/popup-closed-btn.svg") no-repeat 50% 50%;
+  border-radius: 50%;
+  position: relative;
+  left: 86px;
+  bottom: 4px;
 }
 
                           /*  header  */
@@ -515,20 +541,7 @@ h3 {
   margin: 75px 0;
 }
 
-.social-btn {
-  display: inline-block;
-  width: 62px;
-  height: 62px;
-  background: #e1e1e1;
-  text-decoration: none;
-  margin-right: 28px;
-  vertical-align: top;
-  border-radius: 50%;
-}
 
-.social-btn:hover {
-  background-color: #fb565a;
-}
 
 .footer-promo {  
   float: right;
@@ -540,6 +553,41 @@ h3 {
   line-height: 36px;
 }
 
+                          /*  popup  */
+
+.popup {
+  width: 460px;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-right: 90px;
+  padding-bottom: 54px;
+  margin: 0 auto;
+  outline: 1px solid black;
+}
+
+#popup-user-name,
+#popup-user-mail {
+  width: 186px;
+  padding: 9px 15px;
+  margin: 4px 0;
+  font-family: "Roboto","Open Sans",sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+}
+
+#popup-letter {
+  width: 428px;
+  height: 100px;
+  padding: 8px 14px;
+  margin: 8px 0;
+  font-family: "Roboto","Open Sans",sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+}
 
 .popup {
   display: none;
@@ -547,17 +595,25 @@ h3 {
 
 
 
+.popup-item-name {
+  float: left;
+  width: 220px;
+  margin-bottom: 11px;
+  margin-right: 18px;
+  padding: 0;
+}
 
+.popup-item-mail {
+  float: left;
+  width: 220px;
+  margin: 0;
+  padding: 0;
+}
 
-
-
-
-
-
-
-
-
-
+.popup-item-letter {
+  margin-bottom: 31px;
+  clear: both;
+}
 
 
 

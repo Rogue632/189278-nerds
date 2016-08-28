@@ -227,20 +227,21 @@
       </div>
     </footer>
     <div class="popup">
+      <button class="popup-close"></button>
       <form action="#" method="post">
-        <div class="popup-item">
+        <div class="popup-item-name">
           <label for="popup-user-name">Ваше имя:</label>
           <input id="popup-user-name" type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
         </div>
-        <div class="popup-item">
+        <div class="popup-item-mail">
           <label for="popup-user-mail">Ваш e-mail:</label>
           <input id="popup-user-mail" type="email" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
         </div>
-        <div class="popup-item">
+        <div class="popup-item-letter">
           <label for="popup-letter">Текст письма:</label>
-          <textarea id="popup-letter" name="user-letter">В СВОБОДНОЙ ФОРМЕ</textarea>
+          <textarea id="popup-letter" name="user-letter" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
         </div>
-          <input type="submit" value="ОТПРАВИТЬ">
+        <input class="btn btn-red popup-btn" type="submit" value="ОТПРАВИТЬ">
       </form>
     </div>
   </body>
