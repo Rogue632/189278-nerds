@@ -34,7 +34,7 @@
           </nav>
           <div class="user-block">
             <div class="cart">
-              <a class="cart-link" href="#">КОРЗИНА
+              <a class="cart-link icon-basket" href="#">КОРЗИНА
               </a>
             </div>
           </div>
@@ -49,37 +49,53 @@
         <div class="catalog-filter">          
           <form action="#" method="post">
             <div class="catalog-filter-slider">
-              <div>
-              <!-- slider price -->
-              </div>
+              <form action="#" method="get">
+                <div class="catalog-filter-slide">
+                  <div class="catalog-filter-control">
+                    <div class="filter-slide-scale">
+                      <div class="filter-slide-bar"></div>
+                    </div>
+                    <div class="filter-slide-toggle toggle-min"></div>
+                    <div class="filter-slide-toggle toggle-max"></div>
+                  </div>
+                </div>
+                <div class="filter-slide-price">
+                  <label class="price-filter price-filter-min" for="slide-price-min">от 
+                    <input id="slide-price-min" class="" type="text" name="" value="0">
+                  </label>
+                  <label class="price-filter price-filter-max" for="slide-price-max">до 
+                    <input id="slide-price-max" class="" type="text" name="" value="15000">
+                  </label>
+                </div>
+              </form>
             </div>
             <div class="catalog-filter-layout">
               <h3>СЕТКА</h3>
-              <label>
-                <input type="radio" name="web" value="adapt" checked> Адаптивная
+              <label class="catalog-filter-item">
+                <input class="" type="radio" name="web" value="adapt" checked> Адаптивная
               </label>
-              <label>
-                <input type="radio" name="web" value="fix"> Фиксированная
+              <label class="catalog-filter-item">
+                <input class="" type="radio" name="web" value="fix"> Фиксированная
               </label>
-              <label>
-                <input type="radio" name="web" value="rubber"> Резиновая
+              <label class="catalog-filter-item ">
+                <input class="" type="radio" name="web" value="rubber"> Резиновая
               </label>
             </div>
             <div class="catalog-filter-features">
               <h3>Особенности</h3>
-              <label>
+              <label class="catalog-filter-item">
                 <input type="checkbox" name="slider" checked> Слайдер
               </label>
-              <label>
+              <label class="catalog-filter-item">
                 <input type="checkbox" name="features"> Блок преимуществ
               </label>
-              <label>
+              <label class="catalog-filter-item">
                 <input type="checkbox" name="news" checked> Новости
               </label>
-              <label>
+              <label class="catalog-filter-item">
                 <input type="checkbox" name="gallery"> Галерея
               </label>
-              <label>
+              <label class="catalog-filter-item">
                 <input type="checkbox" name="cart"> Корзина
               </label>
             </div>
@@ -100,12 +116,14 @@
                 <a class="catalog-sorting-link" href="#">ПО ФУНКЦИОНАЛУ</a>
               </li>
             </ul>
-            <ul>
-              <li>
-                <div class="icon-up-dir"></div>
+            <ul class="catalog-sorting-control">
+              <li class="catalog-sorting-dir">
+                <div class="icon-down-dir">
+                  <a href="#"></a>
+                </div>
               </li>
-              <li>
-                <div class="icon-down-dir"></div>
+              <li class="catalog-sorting-dir">
+                <div class="icon-up-dir"></div>
               </li>
             </ul>
           </div>
@@ -114,9 +132,9 @@
               <a class="catalog-item-link">
                 <img src="img/aviator.jpg" width="240" height="240" alt="AVIATOR">
               </a>
-              <div class="item-popup">
+              <div class="catalog-item-popup">
                 <h4>AVIATOR</h4>
-                <p>Одностраничный макет с авторским дизайном</p>
+                <p class="catalog-item-popup-text" >Одностраничный макет с авторским дизайном</p>
                 <a class="btn btn-red" href="#">8000 Р.</a>
               </div>
             </div>
@@ -124,9 +142,9 @@
               <a class="catalog-item-link">
                 <img src="img/sunset.jpg" width="240" height="240" alt="SUNSET">
               </a>
-              <div class="item-popup">
-                <h4>Sunset</h4>
-                <p>Интернет-магазин с личным кабинетом</p>
+              <div class="catalog-item-popup">
+                <h4>SUNSET</h4>
+                <p class="catalog-item-popup-text" >Интернет-магазин с личным кабинетом</p>
                 <a class="btn btn-red" href="#">10000 Р.</a>
               </div>
             </div>
@@ -134,9 +152,9 @@
               <a class="catalog-item-link">
                 <img src="img/forte.jpg" width="240" height="240" alt="FORTE">
               </a>
-              <div class="item-popup">
+              <div class="catalog-item-popup">
                 <h4>FORTE</h4>
-                <p>Отличный макет для личного блога</p>
+                <p class="catalog-item-popup-text" >Отличный макет для личного блога</p>
                 <a class="btn btn-red" href="#">5000 Р.</a>
               </div>
             </div>
@@ -144,9 +162,9 @@
               <a class="catalog-item-link">
                 <img src="img/thai.jpg" width="240" height="240" alt="MODERN-ORGANIC-THAI">
               </a>
-              <div class="item-popup">
-                <h4>MODERN ORGANIC THAI</h4>
-                <p>Сайт для ресторана быстрого питания</p>
+              <div class="catalog-item-popup">
+                <h4 class="catalog-popup-header">MODERN ORGANIC THAI</h4>
+                <p class="catalog-item-popup-text" >Сайт для ресторана быстрого питания</p>
                 <a class="btn btn-red" href="#">12000 Р.</a>
               </div>
             </div>
@@ -154,9 +172,9 @@
               <a class="catalog-item-link">
                 <img src="img/avenue.jpg" width="240" height="240" alt="AVENUE">
               </a>
-              <div class="item-popup">
+              <div class="catalog-item-popup">
                 <h4>AVENUE</h4>
-                <p>Макет для блога о путешествиях</p>
+                <p class="catalog-item-popup-text" >Макет для блога о путешествиях</p>
                 <a class="btn btn-red" href="#">8000 Р.</a>
               </div>
             </div>
@@ -164,31 +182,31 @@
               <a class="catalog-item-link">
                 <img src="img/dovetail.jpg" width="240" height="240" alt="DOVETAIL">
               </a>
-              <div class="item-popup">
+              <div class="catalog-item-popup">
                 <h4>DOVETAIL</h4>
-                <p>Интернет-магазин с галереей товаров</p>
+                <p class="catalog-item-popup-text" >Интернет-магазин с галереей товаров</p>
                 <a class="btn btn-red" href="#">14000 Р.</a>
               </div>
             </div>
           </div>
           <div class="catalog-pagination">
-            <ul>
-              <li>
+            <ul class="catalog-pagination-list">
+              <li class="catalog-pagination-item">
                 <div class="catalog-pagination-first">
                   <a class="btn-grey btn-page-first">1</a>
                 </div>
               </li>
-              <li>
+              <li class="catalog-pagination-item">
                 <div class="catalog-pagination-second">
                   <a class="btn-grey btn-page" href="#">2</a>
                 </div>
               </li>
-              <li>
+              <li class="catalog-pagination-item">
                 <div class="catalog-pagination-third">
                   <a class="btn-grey btn-page" href="#">3</a>
                 </div>
               </li>
-              <li>
+              <li class="catalog-pagination-item">
                 <div class="catalog-pagination-next">
                   <a class="btn-grey btn-next" href="#">СЛЕДУЮЩАЯ</a>
                 </div>
@@ -216,9 +234,9 @@
       </div>
       <div class="container clearfix">
         <div class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">VK</a>
-          <a class="social-btn social-btn-fb" href="#">FB</a>
-          <a class="social-btn social-btn-in" href="#">IN</a>
+          <a class="social-btn icon-vk" href="#"></a>
+          <a class="social-btn icon-facebook" href="#"></a>
+          <a class="social-btn icon-instagramm" href="#"></a>
         </div>
         <div class="footer-promo">
           <p class="footer-subtitle">Давайте дружить, это выгодно!</p>
