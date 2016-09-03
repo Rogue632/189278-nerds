@@ -19,7 +19,7 @@
           <nav class="main-navigator">
             <ul class="main-navigator-list">
               <li class="main-nav-list-item">
-                <a class="main-nav-list-link">СТУДИЯ</a>
+                <a class="main-nav-list-link main-nav-active">СТУДИЯ</a>
               </li>
               <li class="main-nav-list-item">
                 <a class="main-nav-list-link" href="#">КЛИЕНТЫ</a>
@@ -111,10 +111,10 @@
             <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.</p>
             <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
-            <ul>
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <ul class="column-left-list">
+              <li class="column-left-item">Веб-сайтов любой сложности</li>
+              <li class="column-left-item">Мобильных приложений для iOS и Android</li>
+              <li class="column-left-item">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
           <div class="column-right">
@@ -122,10 +122,10 @@
               <img src="img/index-logo-seo.png" width="240" height="120" alt="Нёрдс">
             </div>
             <h4>КАК МЫ РАБОТАЕМ:</h4>
-            <ul>
-              <li>С самоотдачей 146%</li>
-              <li>Соблюдая сроки на 100%</li>
-              <li>По предоплате 50%</li>
+            <ul class="column-right-list">
+              <li class="column-right-item">С самоотдачей 146%</li>
+              <li class="column-right-item">Соблюдая сроки на 100%</li>
+              <li class="column-right-item">По предоплате 50%</li>
             </ul>
           </div>
         </div>
@@ -170,22 +170,22 @@
         </div>
       </div>
     </footer>
-    <div class="popup">
-      <button class="popup-close"></button>
-      <form action="#" method="post">
-        <div class="popup-item-name">
-          <label for="popup-user-name">Ваше имя:</label>
-          <input id="popup-user-name" type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
+    <div class="footer-contacts-popup">
+      <form class="form" action="#" method="post">
+        <button type="button" class="popup-close"></button>
+        <div class="form-fieldset form-fieldset-name ">
+          <label for="form-user-name">Ваше имя:</label>
+          <input id="form-user-name" class="form-user-name-value" type="text" name="user-name" placeholder="ПРЕДСТАВЬТЕСЬ,ПОЖАЛУЙСТА">
         </div>
-        <div class="popup-item-mail">
-          <label for="popup-user-mail">Ваш e-mail:</label>
-          <input id="popup-user-mail" type="email" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        <div class="form-fieldset form-fieldset-email ">
+          <label for="form-user-mail">Ваш e-mail:</label>
+          <input id="form-user-mail" class="form-user-mail-value" type="email" name="user-mail" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА">
         </div>
-        <div class="popup-item-letter">
-          <label for="popup-letter">Текст письма:</label>
-          <textarea id="popup-letter" name="user-letter" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
+        <div class="form-fieldset form-fieldset-letter ">
+          <label for="form-user-letter">Текст письма:</label>
+          <textarea id="form-user-letter" class="form-user-letter-value" name="user-letter" placeholder="В СВОБОДНОЙ ФОРМЕ"></textarea>
         </div>
-        <input class="btn btn-red popup-btn" type="submit" value="ОТПРАВИТЬ">
+        <input class="btn btn-red form-fieldset-btn" type="submit" value="ОТПРАВИТЬ">
       </form>
     </div>
   </body>
