@@ -1036,6 +1036,7 @@ input[type="checkbox"]:checked + .filter-features-item::before {
   padding-right: 90px;
   padding-bottom: 54px;
   margin: 0 auto;
+  display: none;
   position: absolute;
   bottom: 189px;
   left: 627px;
@@ -1211,11 +1212,9 @@ input[type="checkbox"]:checked + .filter-features-item::before {
   transform: rotate(135deg);
 }
 
-.footer-contacts-popup {  
-  display: none;
+.footer-contacts-popup-show {
+  display: block;
 }
-
-
 
 
 
