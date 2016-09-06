@@ -115,6 +115,8 @@ img {
 }
 
 .btn-red:active {
+  padding-top: 7px;
+  border-top: 3px solid #9b2d30;
   background: #b63538;
 }
 
@@ -128,6 +130,8 @@ img {
 }
 
 .btn-green:active {
+  padding-top: 7px;
+  border-top: 3px solid #007b47;
   background: #009053;
 }
 
@@ -141,6 +145,8 @@ img {
 }
 
 .btn-yellow:active {
+  padding-top: 7px;
+  border-top: 3px solid #a3841f;
   background: #c09b24;
 }
 
@@ -554,7 +560,7 @@ img {
   padding-left: 20px;
   position: relative;
   background: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .filter-slide-scale {
@@ -612,7 +618,7 @@ img {
   margin-right: 12px;
   border: none;
   background: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .price-filter-max .price-filter-value {
@@ -820,23 +826,33 @@ input[type="checkbox"]:checked + .filter-features-item::before {
 
 .catalog-item {
   width: 240px;
+  height: 240px;
   margin-right: 80px;
   margin-bottom: 80px;
+  padding-top: 30px;
   position: relative;
   float: left;
+  background: #f1f1f1;
+  border-radius: 5px;
 }
 
 .catalog-item::before {
-  content: "\0a66 \0a66 \0a66";
-  width: 240px;
-  height: 30px;
-  display: block;
-  background: #f1f1f1;
-  border-radius: 3px 3px 0 0;
+  content: "•••";
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  position: absolute;
+  top: -5px;
+  left: 10px;
 }
 
-.catalog-item:hover::before {
+.catalog-item:hover {
   background: #797979;
+}
+
+.catalog-item:hover .catalog-item-popup {
+  display: block;
 }
 
 .catalog-item:nth-child(2n) {
@@ -855,8 +871,9 @@ input[type="checkbox"]:checked + .filter-features-item::before {
   height: 170px;
   padding: 15px 30px;
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 20px;
+  z-index: 20;
   background: #ffffff;
 }
 
@@ -896,7 +913,7 @@ input[type="checkbox"]:checked + .filter-features-item::before {
 }
 
 .btn-page {
-  width: 6px;
+  width: 8px;
   padding: 8px 13px;
   margin-right: 12px;
   border: 2px solid #f1f1f1;
@@ -1215,44 +1232,3 @@ input[type="checkbox"]:checked + .filter-features-item::before {
 .footer-contacts-popup-show {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
